@@ -73,7 +73,7 @@ function getQuestions() {
     }
   };
 
-  myReq.open("GET", "./esay_kemia_questions.json", true);
+  myReq.open("GET", "./khol_esay.json", true);
   myReq.send();
 }
 if (!playOneOnly) {
@@ -210,4 +210,3 @@ function countDown(duretion, count) {
     }, 1000);
   }
 }
-// localStorage.clear();
