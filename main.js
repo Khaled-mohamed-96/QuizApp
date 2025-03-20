@@ -24,7 +24,7 @@ if (storagePlay) {
   const dataFromLocalStorage = JSON.parse(storagePlay);
   resultsContainer.innerHTML = dataFromLocalStorage.score;
 }
-categoryEle.innerHTML = "&hearts;&hearts;&hearts;امتحان كيميا يا ميراا";
+categoryEle.innerHTML = "&hearts;&hearts;&hearts; كمياء(الايثانول)";
 function getQuestions() {
   let myReq = new XMLHttpRequest();
 
