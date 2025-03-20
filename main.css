@@ -1,0 +1,145 @@
+:root {
+    --blue-color: #0075ff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.quiz-app {
+    margin: 20px auto;
+    width: 800px;
+    background-color: #f8f8f8;
+    padding: 15px;
+
+    @media (max-width : 767px) {
+        & {
+            max-width: 400px;
+        }
+    }
+
+    .quiz-info {
+        display: flex;
+        background-color: #fff;
+        padding: 20px;
+
+        .category {
+            flex: 1;
+        }
+
+        .count {
+            flex: 1;
+            text-align: right;
+        }
+    }
+
+    .quiz-area {
+        background-color: #fff;
+        padding: 20px;
+        margin-top: 15px;
+
+        h2 {
+            margin: 0;
+        }
+    }
+
+    .answers-area {
+        background-color: #fff;
+        padding: 20px;
+        margin-top: 5px;
+
+        .answer {
+            background-color: #f9f9f9;
+            padding: 15px;
+            width: 100%;
+
+            &:not(:last-child) {
+                margin-bottom: 5px;
+                border-bottom: 1px solid #dfdfdf;
+            }
+
+            input[type="Radio"]:checked+label {
+                color: var(--blue-color);
+            }
+
+            label {
+                transition: .3s;
+                cursor: pointer;
+                font-weight: bold;
+                color: #777;
+                font-size: 22px;
+                margin-left: 5px;
+                position: relative;
+                top: 2px;
+            }
+        }
+    }
+
+    .sumbit-button {
+        background-color: var(--blue-color);
+        display: block;
+        width: 80%;
+        margin: auto;
+        padding: 10px 15px;
+        border: none;
+        color: #FFF;
+        font-weight: bold;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 6px;
+
+        &:focus {
+            outline: navajowhite;
+        }
+    }
+
+    .bullets {
+        border-top: 1px solid #dfdfdf;
+        background-color: #FFF;
+        display: flex;
+        padding: 20px;
+
+        .spans {
+            flex: 1;
+            display: flex;
+
+            span {
+                width: 20px;
+                height: 20px;
+                background-color: #ddd;
+                margin-right: 5px;
+                border-radius: 50%;
+
+                &.on {
+                    background-color: #0075ff;
+                    border: 2px solid #ddd;
+                }
+
+            }
+        }
+    }
+
+
+    .results {
+        span {
+            font-weight: bold;
+
+            &.bad {
+                color: #dc0a0a;
+            }
+
+            &.good {
+                color: #009688;
+            }
+
+            &.perfect {
+                color: #0075ff;
+            }
+        }
+    }
+}
