@@ -40,7 +40,7 @@ function getQuestions() {
       addQuestionData(questionsObjext[curretnIndex], qCount);
 
       // Start Count Down
-      countDown(60, qCount);
+      countDown(90, qCount);
 
       // Click On Submit
       submitButton.onclick = function () {
@@ -65,7 +65,7 @@ function getQuestions() {
 
         // Start Count Down
         clearInterval(countDownIntr);
-        countDown(60, qCount);
+        countDown(90, qCount);
 
         // Show Results
         showResults(qCount);
@@ -73,7 +73,7 @@ function getQuestions() {
     }
   };
 
-  myReq.open("GET", "./khol_esay.json", true);
+  myReq.open("GET", "./khol_normal.json", true);
   myReq.send();
 }
 if (!playOneOnly) {
