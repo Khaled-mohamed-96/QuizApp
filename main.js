@@ -8,7 +8,6 @@ let resultsContainer = document.querySelector(".results");
 let categoryEle = document.querySelector(".category span");
 let countDownEle = document.querySelector(".countdown");
 // set Options
-window.localStorage.clear()
 let curretnIndex = 0;
 let rightAnswers = 0;
 let countDownIntr;
@@ -211,3 +210,4 @@ function countDown(duretion, count) {
     }, 1000);
   }
 }
+window.localStorage.clear()
