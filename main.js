@@ -12,6 +12,7 @@ let curretnIndex = 0;
 let rightAnswers = 0;
 let countDownIntr;
 let playOneOnly = false;
+window.localStorage.remove("play-one")
 let storagePlay = window.localStorage.getItem("play-one");
 
 // Check IF the Game Has Play One Time For Disbled
