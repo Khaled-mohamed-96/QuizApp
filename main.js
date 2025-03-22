@@ -211,3 +211,4 @@ function countDown(duretion, count) {
   }
 }
 
+window.localStorage.clear();
