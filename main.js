@@ -73,7 +73,7 @@ function getQuestions() {
     }
   };
 
-  myReq.open("GET", "./khol_normal.json", true);
+  myReq.open("GET", "./khol_hard.json", true);
   myReq.send();
 }
 if (!playOneOnly) {
